@@ -58,5 +58,4 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/my-go-app:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/my-go-app:${{ github.ref_name }}
